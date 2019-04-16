@@ -33,13 +33,14 @@ class MainActivity : AppCompatActivity(), AllStationsContract.View {
         on tab layout. If you add 3 stations in above list instead of 2, each station fragment will display outbound trains to other 2 stations
          */
         val listOfStationsAndRelations = whichStationsToShow
-                .map { station ->
-                    station.name to Pair<String, List<Long>>(station.code ?: "", whichStationsToShow
-                            .filter { it.id != station.id }.map { it.id?.toLong() ?: -1 })
-                }
+            .map { station ->
+                station.name to Pair<String, List<Long>>(station.code ?: "", whichStationsToShow
+                    .filter { it.id != station.id }.map { it.id?.toLong() ?: -1 })
+            }
 
         view_pager.adapter = StationsViewPagerAdapter(
-                supportFragmentManager, listOfStationsAndRelations)
+            supportFragmentManager, listOfStationsAndRelations
+        )
         tab_layout.setupWithViewPager(view_pager)
         view_pager.visibility = View.VISIBLE
         tab_layout.visibility = View.VISIBLE
