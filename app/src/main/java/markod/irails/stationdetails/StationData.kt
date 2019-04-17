@@ -3,7 +3,6 @@ package markod.irails.stationdetails
 import org.simpleframework.xml.Element
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
-import java.util.*
 
 @Root(name = "ArrayOfObjStationData ")
 class StationDataListContainer constructor(

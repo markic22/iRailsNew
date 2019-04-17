@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import markod.irails.R
 
-class ArrivingTrainsAdapter(var incomingTrains: List<StationData>)
+class ArrivingTrainsAdapter(private var incomingTrains: List<StationData>)
     : RecyclerView.Adapter<ArrivingTrainsAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
@@ -31,7 +31,6 @@ class ArrivingTrainsAdapter(var incomingTrains: List<StationData>)
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        val context = viewHolder.itemView.context
         val train = incomingTrains[position]
         viewHolder.dueIn.text = "${train.dueIn} min"
         viewHolder.arrivalAt.text = train.expectedArrival

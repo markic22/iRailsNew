@@ -2,7 +2,7 @@ package markod.irails.dagger
 
 import android.content.SharedPreferences
 import dagger.Component
-import markod.irails.AllStationsPresenter
+import markod.irails.allstations.AllStationsPresenter
 import markod.irails.MainActivity
 import markod.irails.stationdetails.IncomingTrainsToStationPresenter
 import markod.irails.stationdetails.StationFragment

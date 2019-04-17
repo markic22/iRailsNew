@@ -1,4 +1,4 @@
-package markod.irails
+package markod.irails.allstations
 
 import org.simpleframework.xml.Element
 import org.simpleframework.xml.Root

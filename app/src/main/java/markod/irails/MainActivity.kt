@@ -5,6 +5,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import markod.irails.allstations.AllStationsContract
+import markod.irails.allstations.AllStationsPresenter
+import markod.irails.allstations.Station
+import markod.irails.allstations.StationsViewPagerAdapter
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), AllStationsContract.View {
@@ -30,7 +34,8 @@ class MainActivity : AppCompatActivity(), AllStationsContract.View {
         /*
         with the below list, i wanted to get all stations names that i will show, paired with the information regarding from which station to which stationS
         i want to show current trains. This is done so we can dynamicly add remove stations above and we will dynamicly generate each station with seperate page
-        on tab layout. If you add 3 stations in above list instead of 2, each station fragment will display outbound trains to other 2 stations
+        on tab layout. If you add 3 stations in above list instead of 2, each station fragment will display outbound trains to other 2 stations. It turned out you cannot do that with current
+        api, or at least i haven't found a way.
          */
         val listOfStationsAndRelations = whichStationsToShow
             .map { station ->

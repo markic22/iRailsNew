@@ -1,7 +1,7 @@
 package markod.irails.stationdetails
 
-import com.example.network.mvp.MvpPresenter
-import com.example.network.mvp.MvpView
+import markod.irails.mvp.MvpPresenter
+import markod.irails.mvp.MvpView
 
 class IncomingTrainsToStationContract{
 

@@ -1,4 +1,4 @@
-package com.example.network.mvp
+package markod.irails.mvp
 
 import androidx.annotation.CallSuper
 import io.reactivex.disposables.CompositeDisposable

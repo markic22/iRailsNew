@@ -1,4 +1,4 @@
-package markod.irails
+package markod.irails.allstations
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

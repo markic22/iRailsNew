@@ -1,9 +1,9 @@
 package markod.irails.stationdetails
 
-import com.example.network.mvp.BasePresenter
+import markod.irails.mvp.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import markod.irails.IRailApi
+import markod.irails.network.IRailApi
 
 class IncomingTrainsToStationPresenter(private val iRailApi: IRailApi) : BasePresenter<IncomingTrainsToStationContract.View>(), IncomingTrainsToStationContract.Presenter {
 

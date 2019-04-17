@@ -28,5 +28,4 @@ abstract class BaseFragment : Fragment() {
     }
 
     abstract fun initUI()
-
 }

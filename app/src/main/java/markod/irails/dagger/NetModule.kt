@@ -6,8 +6,8 @@ import android.preference.PreferenceManager
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import dagger.Module
 import dagger.Provides
-import markod.irails.AllStationsPresenter
-import markod.irails.IRailApi
+import markod.irails.allstations.AllStationsPresenter
+import markod.irails.network.IRailApi
 import markod.irails.stationdetails.IncomingTrainsToStationPresenter
 import okhttp3.Cache
 import okhttp3.OkHttpClient

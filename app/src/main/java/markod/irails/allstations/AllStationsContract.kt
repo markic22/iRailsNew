@@ -1,4 +1,4 @@
-package markod.irails
+package markod.irails.allstations
 
 import com.example.network.mvp.MvpPresenter
 import com.example.network.mvp.MvpView

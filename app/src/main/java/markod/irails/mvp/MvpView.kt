@@ -1,3 +1,3 @@
-package com.example.network.mvp
+package markod.irails.mvp
 
 interface MvpView
