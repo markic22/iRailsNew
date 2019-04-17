@@ -1,7 +1,7 @@
 package markod.irails.allstations
 
-import com.example.network.mvp.MvpPresenter
-import com.example.network.mvp.MvpView
+import markod.irails.mvp.MvpPresenter
+import markod.irails.mvp.MvpView
 
 class AllStationsContract{
 
@@ -10,7 +10,7 @@ class AllStationsContract{
         fun showError(error: String)
     }
 
-    interface Presenter: MvpPresenter<View>{
+    interface Presenter: MvpPresenter<View> {
         fun loadStations()
     }
 }
